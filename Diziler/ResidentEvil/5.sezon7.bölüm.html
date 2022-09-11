@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+</head>
+<body>
+    <div id="player"></div>
+    <div id="clapprplayer"></div>            
+    <script>
+      Clappr.Log.setLevel(0);
+      var player = new Clappr.Player({
+        source:"https://storage.diziyou.com/episodes/11548_tr/1080p.m3u8", 
+        mimeType: "video/mp4",
+        parentId: "#clapprplayer",
+        width: '100%',
+        height: '100%',
+        loop: true,
+        hideMediaControl: false
+      });
+    </script>
+  </body>
+</html>
