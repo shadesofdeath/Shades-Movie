@@ -1,0 +1,119 @@
+hr {
+    border: none;
+  }
+  body {
+    background: #222;
+    font-family: "Advent Pro";
+    color: white;
+  }
+  .container {
+    background: #333;
+  }
+  .btn:hover {
+    border-bottom-width: 4px;
+    margin-bottom: 22px;
+  }
+  .btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 14px 10px;
+    margin-top: 1px;
+    margin-bottom: 25px;
+    border: 1px solid;
+    color: white;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  .btn.inverse {
+    color: #222;
+    background-color: white;
+    border-color: #b7b7b7;
+  }
+  .btn + .btn {
+    margin-left: 0.5em;
+  }
+  .btn.create {
+    color: lightgreen;
+  }
+  .btn.winner {
+    color: skyblue;
+  }
+  .btn.avoid {
+    color: tomato;
+  }
+  .btn.danger {
+    border-color: transparent;
+    color: salmon;
+  }
+  .lightbg .btn {
+    color: #111;
+  }
+  .lightbg .btn + .btn {
+    margin-left: 0.5em;
+  }
+  .lightbg .btn.create {
+    color: tomato;
+  }
+  .lightbg .btn.winner {
+    color: deepskyblue;
+  }
+  .lightbg .btn.avoid {
+    color: forestgreen;
+  }
+  .lightbg .btn.danger {
+    border-color: transparent;
+    color: salmon;
+  }
+  .btn:hover.danger {
+    color: tomato;
+    margin-bottom: 24px;
+    border: 1px dotted;
+  }
+  .btn.whooooa {
+    float: right;
+    margin-right: 1px;
+    padding-bottom: 8px;
+    font-size: 22px;
+    opacity: 0.06;
+    -webkit-transition: all .8s ease-out;
+  }
+  .btn.whooooa:hover {
+    color: firebrick;
+    opacity: 0.96;
+    border: 4px double;
+    border-bottom: 34px dashed;
+    border-top: 6px double;
+    padding-top: 18px;
+  }
+  .container,
+  .lightbg {
+    text-align: left;
+    max-width: 700px;
+    margin: 50px auto 32px;
+    padding: 30px;
+    border-left: 1px solid;
+  }
+  .lightbg {
+    margin-top: 32px;
+    color: #111;
+    background: whiteSmoke;
+    border-style: dashed;
+  }
+  h1 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 30px;
+  }
+  p {
+    margin: 16px 0;
+  }
+  hr {
+    color: #777;
+  }
+  a {
+    color: whiteSmoke;
+  }
+  
