@@ -19,11 +19,10 @@ body {
   
   min-block-size: 100%;
   min-inline-size: 100%;
-  box-sizing: border-box;
-  display: grid;
+  display:block;
   place-content: center;
   font-family: system-ui;
-  font-size: min(200%, 5vmin);
+  font-size: min(100%, 5vmin);
 }
 
 h1, p, body {
