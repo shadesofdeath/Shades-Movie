@@ -1,15 +1,12 @@
-.profile-menu { 
-  .dropdown-menu{
-    right: 0;
-    left: unset;
-  }
-  .fa-fw{
-    margin-right: 10px;
-  }  
+.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 160px;
+  text-align: center;
+  background-color: transparent;
 }
-.toggle-change{
-    &::after {
-    border-top: 0;
-    border-bottom: .3em solid;
-    }
-} 
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+ margin-left: -80px;
+}
