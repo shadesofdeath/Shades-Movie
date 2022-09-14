@@ -15,17 +15,12 @@ h1 {
 }
 
 body {
-  min-block-size: 100%;
-  min-inline-size: 100%;
   display:block;
   place-content: center;
   font-family: system-ui;
   font-size: min(100%, 5vmin);
 }
 
-h1, p, body {
-  margin: 0;
-}
 
 p {
   font-family: "Dank Mono", ui-monospace, monospace;
