@@ -1,1 +1,21 @@
-<video width="100%" autoplay="" controls="" src="https://mdb1c83wae.akamai-user-content.net/d/awzpvuq5o7hvw4m6qkxmhl2byiru3v7ah7zixmvuiigixlfeobzpiihaabrqfqsruou4rx25/video.mp4"></video>
+<html>
+  <body>
+    <div id="playerContainer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
+    <script>
+      const config = {
+        sources: [
+          {
+            type: 'hls',
+            src: 'https://v2.schexnider.buzz/mg/FaIlLKAmnJZhHTSlnl4kYxc1pzSmp2ywYyOupzfhZF4kBGxmYwRjBQOjYxE1LJjd0zxp2AbMKuhnJEypv5vqKc6s0xi2vr1',
+          }
+        ],
+      };
+
+      const element = document.getElementById('playerContainer');
+      const player = IndigoPlayer.init(element, config);
+
+      // You can use the player object now to access the player and it's methods (play, pause, ...)
+    </script>
+  </body>
+</html>

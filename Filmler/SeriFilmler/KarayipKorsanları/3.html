@@ -1,4 +1,21 @@
 <html>
-  <title>Shades TV</title>  
-  <iframe src="https://ia801505.us.archive.org/15/items/filmindir.club-karayip-korsanlari-1-siyah-incinin-laneti-2003/%5Bfilmindir.club%5DKarayip%20Korsanlar%C4%B1%203%20D%C3%BCnyan%C4%B1n%20Sonu%20%282007%29.mp4" width="100%" height="100%" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+  <body>
+    <div id="playerContainer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
+    <script>
+      const config = {
+        sources: [
+          {
+            type: 'hls',
+            src: 'https://i10.lindenberger.buzz/fo/NNNXzjPHmdFAxvlmOAXjNYAmpAZjVmZJCQ1XmFFYmfGd8vmmQAYZmdFf408h2z3NN87x5FmMb8XLd7dfr2k3zC7mJ_sFJlS-BhgxXYSLUK4jFJjBggKcS-hRb00VTKJJHtqmxdZbTuqyml1S_UNhJUt-hjmps6-TL3ZA4yDztInZFUnKFrK5PEGRQjZfPO1pIvr1b720',
+          }
+        ],
+      };
+
+      const element = document.getElementById('playerContainer');
+      const player = IndigoPlayer.init(element, config);
+
+      // You can use the player object now to access the player and it's methods (play, pause, ...)
+    </script>
+  </body>
 </html>
