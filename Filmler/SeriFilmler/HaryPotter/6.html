@@ -1,23 +1,21 @@
 <html>
-<head>
-  <title>Shades TV</title>  
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
-</head>
-<body>
-    <div id="player"></div>
-<div id="clapprplayer"></div>
-<script>
-Clappr.Log.setLevel(0);
-var player = new Clappr.Player({
-    source: "https://archive.org/download/4.-harry.-potter.ve.-ates.-kadehi.-2005.m-1080p.-bluray.x-264.-dual.-tr.-eng-fullindirsene.net/6.Harry.Potter.ve.Melez.Prens.2009.m1080p.BluRay.x264.DUAL.TR.ENG%20--%20Fullindirsene.net%20--.mkv",
-    mimeType: "video/mp4",
-    parentId: "#clapprplayer",
-    width: '100%',
-    height: '100%',
-    loop: true,
-    hideMediaControl: false
-});
-</script>
-</body>
-</body>
+  <body>
+    <div id="playerContainer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
+    <script>
+      const config = {
+        sources: [
+          {
+            type: 'hls',
+            src: 'https://i8.schweighardt.buzz/fw/NVDPYNAwfdHQcb8pDwPZjFmZHQYZlZw1e0fFbft0gzHmAAs1Ygv0gxHXit8PHedXft08h2z3HD7_UFJdfYxKaiXO3mVo5qWlhtNlKF2VRoTO5Ty5xtSaUmy5-ktdtxsNk7U-kns0mrSH7NpGozp3I0PDQNPjNbPEgpAvr1b720',
+          }
+        ],
+      };
+
+      const element = document.getElementById('playerContainer');
+      const player = IndigoPlayer.init(element, config);
+
+      // You can use the player object now to access the player and it's methods (play, pause, ...)
+    </script>
+  </body>
+</html>
