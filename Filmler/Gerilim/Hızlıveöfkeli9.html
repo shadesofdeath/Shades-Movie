@@ -1,27 +1,24 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Shades TV</title>  
-        <!-- Include hls.js from a CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.5.14/hls.min.js" integrity="sha512-js37JxjD6gtmJ3N2Qzl9vQm4wcmTilFffk0nTSKzgr3p6aitg73LR205203wTzCCC/NZYO2TAxSa0Lr2VMLQvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
-    </head>
-    <body>
-        <!-- HTML5 Video Tag -->
-        <video id="video" 
-               width='%100' height='%100' controls autoplay
-               src="https://bsdod-sdc92-sd04sd.moly.cloud/hls/xqx2okxxifokjiqbtf5cpjsf43u7buykbi3tpodeukgce325hyartv4d3gga/index-v1-a1.m3u8">
-        </video>
-        <!-- Invocation Script -->
-        <script>
-            if (Hls.isSupported()) {
-              var video = document.getElementById('video');
-              var hls = new Hls();
-              hls.loadSource(video.src);
-              hls.attachMedia(video);
-            }else{
-                alert("Cannot stream HLS, use another video source");
-            }
-        </script>
-    </body>
+  <body>
+    <div id="playerContainer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
+    <script>
+      const config = {
+        sources: [
+          {
+            type: 'hls',
+            src: 'https://s9.ananthanarayanan.buzz/m9/EwxhZwNlZF5PoUIlLKxhZGN4ZUNhESIOGNd0zxLJ5uoaEbLJ5upzS5LJ5uov5vqKc6YTSfMKuuozElLJgcpl5vqKc6YTSfMKuuozElLJgcpl5vqKc6YTSfMKuuozElLJgcpl5vqKc6YTSfrJImnTg5LKMcL2uyozHhLaI6rts0xi9vr1',
+          }
+        ],
+      };
+
+      const element = document.getElementById('playerContainer');
+      const player = IndigoPlayer.init(element, config);
+
+      // You can use the player object now to access the player and it's methods (play, pause, ...)
+    </script>
+  </body>
 </html>
+
+
+

@@ -1,1 +1,21 @@
-<div class="video-container"><p><iframe src="https://videoseyred.in/embed/348720" frameborder="0" width="1280" height="720" title="Videoseyredin Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></div></div></div><div id="alt">
+<html>
+  <body>
+    <div id="playerContainer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
+    <script>
+      const config = {
+        sources: [
+          {
+            type: 'hls',
+            src: 'https://s4.papanicolaou.buzz/mt/DzSlLzSlnJShYwVjZwVhI0IPYHEZYwRjBQOjYxEIDHjd0zxpTSjLJ5cL29fLJ91YzW1rabfLaIgLzSfo3IanP5vqKc6YUAwnTSlMzIhLzIlMl5vqKc6s0xi4vr1',
+          }
+        ],
+      };
+
+      const element = document.getElementById('playerContainer');
+      const player = IndigoPlayer.init(element, config);
+
+      // You can use the player object now to access the player and it's methods (play, pause, ...)
+    </script>
+  </body>
+</html>
