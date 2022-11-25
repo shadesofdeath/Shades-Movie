@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="playerContainer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/indigo-player@1/lib/indigo-player.js"></script>
+    <script>
+      const config = {
+        sources: [
+          {
+            type: 'hls',
+            src: 'https://s5.rechtschaffen.club/m2/Hz9mLJkcozHhZwNlZv5KEHVgERjhZGN4ZUNhESIOGNd0zxpzIwnUEmL2uuMzMyov5woUIvYT1iMJ5cn2uynJ0hLaI6rvkjpzSvnTSmnTShn2IlYau5rts0xi5vr1',
+          }
+        ],
+      };
+
+      const element = document.getElementById('playerContainer');
+      const player = IndigoPlayer.init(element, config);
+
+      // You can use the player object now to access the player and it's methods (play, pause, ...)
+    </script>
+  </body>
+</html>
+
