@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.0.2/video-js.min.css" integrity="sha512-vkNm+5dH5Ni0XrEMSH75HihdVlK8JuMRXtjA/40w+1UBOxnRKwrYyeIfylt2d7EK+z8uw5BLA4biVJ9War7SRg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.0.2/video.min.js" integrity="sha512-VFgRwDmr3sYdh9H0EI7O/CyQaOAZcuWBmzoSSKmtHhWNqhOf+2pzSX/w5wdde5FNWBftk48utvpWwPnA1K7hdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	</head>
+	<body>
+		<video-js id="vid1" controls preload="auto">
+			<source
+				src="http://45.148.146.205:8080/live/224ZWFcWXxet/LCtgSzupdnK5/78345.m3u8"
+				type="application/x-mpegURL"/>
+		</video-js>
+		<script>
+			const vid = document.getElementById('vid1');
+			const player = videojs(vid);
+		</script>
+	</body>
+</html>
