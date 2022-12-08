@@ -1,0 +1,18 @@
+<html>
+	<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.0.2/video.js" integrity="sha512-/1O0hvST9qeNlopOzAHN3/7oqrY6cRLSmek2F4y9ahASm52kZycNRVWEF+ctPj8ZqdQsHGChFhd/3Mygz+E4dw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.0.2/video-js.min.css" integrity="sha512-vkNm+5dH5Ni0XrEMSH75HihdVlK8JuMRXtjA/40w+1UBOxnRKwrYyeIfylt2d7EK+z8uw5BLA4biVJ9War7SRg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.0.2/video.min.js" integrity="sha512-VFgRwDmr3sYdh9H0EI7O/CyQaOAZcuWBmzoSSKmtHhWNqhOf+2pzSX/w5wdde5FNWBftk48utvpWwPnA1K7hdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	</head>
+	<body>
+		<video-js id="vid1" controls preload="auto">
+			<source
+				src="https://storage.diziyou.com/episodes/10193_tr/play.m3u8"
+				type="application/x-mpegURL"
+			/>
+		</video-js>
+		<script>
+			const vid = document.getElementById('vid1');
+			const player = videojs(vid);
+		</script>
+	</body>
+</html>
