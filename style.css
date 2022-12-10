@@ -91,7 +91,7 @@ h5{
   margin-top: 0.5em;
   overflow-y: auto;
   overflow-x: hidden;
-  margin-right:7%;
+  margin-right:4%;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 }
