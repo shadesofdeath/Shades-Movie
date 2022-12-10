@@ -63,8 +63,8 @@ h5{
   left: 0;
   right: 0;
   bottom: 0;
-  width: 80%;
-  height: 100%;
+  width: 50%;
+  height: 250%;
   background: #ffffff;
   padding: 2em;
   border: 3px solid #ffffff;
@@ -73,7 +73,7 @@ h5{
 }
 
 .input-query {
-  width: 100%;
+  width: 50%;
   text-align: center;
   padding: 0.5em;
   border: 1px solid #000000;
@@ -94,7 +94,7 @@ h5{
 }
 
 .list {
-  max-height: 240px;
+  max-height: 220px;
 }
 
 .list-item {
