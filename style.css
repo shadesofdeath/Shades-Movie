@@ -64,7 +64,6 @@ h5{
   right: 0;
   bottom: 0;
   width: 100%;
-  margin-right:7%;
   background: #ffffff;
   padding: 2em;
   border: 3px solid #ffffff;
@@ -91,6 +90,7 @@ h5{
   margin-top: 0.5em;
   overflow-y: auto;
   overflow-x: hidden;
+  margin-right:7%;
 }
 
 .list {
