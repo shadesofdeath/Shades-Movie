@@ -58,7 +58,7 @@ h5{
 }
 
 .container {
-  position:relative;
+
   top: 0;
   left: 0;
   right: 0;
@@ -87,11 +87,17 @@ h5{
 }
 
 
-.list-wrap {
+.list-wrap{
   margin-top: 0.5em;
   overflow-y: auto;
   overflow-x: hidden;
   margin-right:5%;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.list-wrap::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 .list {
