@@ -74,10 +74,9 @@ h5{
 .input-query {
   width: 65%;
   text-align: center;
-  padding: 0.2em;
   border: 1px solid #000000;
   border-radius: 50px;
-  font-size: 1em;
+  font-size: 0.9em;
   font-style:'Kanit', sans-serif;
 }
 .input-query:focus ~ .counter {
@@ -104,7 +103,7 @@ h5{
 }
 
 .list-item {
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding: 0.4em .0em;
   border-bottom: 1px solid #d4d7e1;
   border-top: 1px so1lid white;
