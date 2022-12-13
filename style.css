@@ -72,10 +72,10 @@ h5{
 }
 
 .input-query {
-  width: 65%;
+  width: 88%;
   text-align: center;
+  margin: auto;
   border: 1px solid #000000;
-  border-radius: 50px;
   font-size: 0.9em;
   font-style:'Kanit', sans-serif;
 }
@@ -89,7 +89,7 @@ h5{
   margin-top: 0.5em;
   overflow-y: auto;
   overflow-x: hidden;
-  margin-right:7%;
+  margin-right:5%;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 }
@@ -105,6 +105,7 @@ h5{
 .list-item {
   font-size: 0.8em;
   padding: 0.4em .0em;
+  margin: auto;
   border-bottom: 1px solid #d4d7e1;
   border-top: 1px so1lid white;
   overflow: hidden;
@@ -138,12 +139,14 @@ h5{
 
 .list-item--disable {
   text-align: center;
+  margin: auto;
   border-bottom: none;
   animation: shake 0.9s;
   color: #9da1b1;
 }
 
 .counter {
+  margin: auto;
   position: absolute;
   bottom: -1px;
   right: 10px;
