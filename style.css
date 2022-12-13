@@ -72,7 +72,7 @@ h5{
 }
 
 .input-query {
-  width: 88%;
+  width: 90%;
   text-align: center;
   margin: auto;
   border: 1px solid #000000;
@@ -89,7 +89,6 @@ h5{
   margin-top: 0.5em;
   overflow-y: auto;
   overflow-x: hidden;
-  margin-right:5%;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 }
@@ -99,7 +98,9 @@ h5{
 }
 
 .list {
+  max-width: 90%;
   max-height: 220px;
+  padding-left: 0px;
 }
 
 .list-item {
